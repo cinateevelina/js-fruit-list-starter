@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f2;
+    color: #1f2a1f;
+}
+
+.fruit-app {
+    width: min(90%, 620px);
+    padding: 32px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.fruit-app > p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+button {
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #2f6f3e;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #245730;
+}
+
+.fruit-list {
+    display: none;
+    list-style: none;
+    margin-top: 24px;
+    gap: 12px;
+}
+
+.fruit-list.show {
+    display: grid;
+}
+
+.fruit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border: 1px solid #d9e3d7;
+    border-radius: 10px;
+    background-color: #f8fbf7;
+}
+
+.status-message {
+    min-height: 24px;
+    margin-top: 16px;
+    font-weight: 700;
+}
