@@ -83,6 +83,9 @@ const statusMessageElement = document.getElementById("status-message");
 //       += bevarer de elementer, du allerede har indsat.
 // ✏️ Skriv din forEach og template literal her ↓
 
+fruits.forEach(fruit => { 
+    fruitListElement.innerHTML += `<li class="fruit-item">${fruit.emoji} ${fruit.name} - ${fruit.color}</li>`;
+});
 
 // 💬 Hvorfor bruger vi += og ikke kun =?
 
