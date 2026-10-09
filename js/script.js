@@ -88,6 +88,7 @@ fruits.forEach(fruit => {
 });
 
 // 💬 Hvorfor bruger vi += og ikke kun =?
+//TILFØJE NYE FRUGTER TIL LISTEN, UDEN AT ERSTATTE DE GAMLE.
 
 // ------------------------------------------------------------
 // STEP 4: Funktion til at vise og skjule listen
@@ -116,6 +117,14 @@ function toggleFruitList() {
     //       Hint: Skift tekst med .textContent.
     // ✏️ Skriv if/else her ↓
 
+    if (isVisible) {
+        toggleButtonElement.textContent = "Close fruit list";
+        statusMessageElement.textContent = "Fruit list is open";
+    } else {
+        toggleButtonElement.textContent = "Show fruit list";
+        statusMessageElement.textContent = "Fruit list is closed";
+    }
+
 
     // ✅ Udleveret: Skjul statusbeskeden efter 2 sekunder.
     // Du skal IKKE skrive eller ændre denne del.
@@ -124,6 +133,7 @@ function toggleFruitList() {
 }
 
 // 💬 Forklar, hvorfor isVisible kan bruges som betingelse.
+//FORDI DET KAN VÆRE SANDT ELLER FALSK, OG KAN DIREKTE BRUGES I IF-STATEMENTET.
 
 // ------------------------------------------------------------
 // STEP 5: Kobl knappen til funktionen
@@ -132,6 +142,8 @@ function toggleFruitList() {
 //       Ved klik skal toggleFruitList bruges som callback.
 //       Hint: Brug addEventListener og funktionsnavnet UDEN ().
 // ✏️ Skriv din kode her ↓
+
+clickButtonElement.addEventListener("click", toggleFruitList); 
 
 
 // ------------------------------------------------------------
