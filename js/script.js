@@ -54,6 +54,12 @@ const fruits = [
 //
 // ✏️ Skriv dine tre variabler her ↓
 
+const fruitListElement = document.getElementById("fruit-list");
+const toggleButtonElement = document.getElementById("toggle-fruits");
+const statusMessageElement = document.getElementById("status-message"); 
+
+// 💬 Forklar, hvorfor vi bruger const her.
+//FORDI MAN VIL OPRETTE EN VARIABEL SOM IKKE SKAL ÆNDRES, OG MAN VIL HAVE AT DEN ER KONSTANT.
 
 // ------------------------------------------------------------
 // STEP 3: Byg frugtlisten med forEach og template literals
