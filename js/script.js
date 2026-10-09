@@ -143,7 +143,7 @@ function toggleFruitList() {
 //       Hint: Brug addEventListener og funktionsnavnet UDEN ().
 // ✏️ Skriv din kode her ↓
 
-clickButtonElement.addEventListener("click", toggleFruitList); 
+toggleButtonElement.addEventListener("click", toggleFruitList); 
 
 
 // ------------------------------------------------------------
